@@ -1,18 +1,9 @@
-/* Write a JavaScript program to test whether an array of integers of length 2 contains a 1 or a 3.  */
+/* Write a JavaScript program to find the types of a given angle.
 
-let 
-myArray=[];
+Types of angles:
+    Acute angle: An angle between 0 and 90 degrees.
+    Right angle: An 90 degree angle.
+    btuse angle: An angle between 90 and 180 degrees.
+    Straight angle: A 180 degree angle. */
 
-for(let i=0; i<2; i++){
-    myArray[i]=Math.floor(Math.random()*10);
-}
 
-console.log(myArray);
-
-for(let i=0; i<myArray.length; i++){
-    if(myArray[i]===1 || myArray[i]===3){
-        console.log("The integer inside is equel to 1 or to 3");
-    }else{
-        console.log("The integer inside is not equal to 1 or 3")
-    }
-}
