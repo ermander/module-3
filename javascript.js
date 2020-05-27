@@ -1,4 +1,4 @@
-const url = "https://striveschool.herokuapp.com/api/product/";
+let url = "https://striveschool.herokuapp.com/api/product/"
 
 const getProducts = async () => { 
     let authToken = btoa("user8:eAqd2ZPk3Rbtm8Mw")
@@ -8,5 +8,6 @@ const getProducts = async () => {
     "Authorization": `Basic ${authToken}`
     }
     })
-    console.log(response.json())
+    let parsedResponse = await response.json()
+    console.log(parsedResponse)
 };
