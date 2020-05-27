@@ -1,7 +1,7 @@
 const url = "https://striveschool.herokuapp.com/api/product/";
 
-const getEvents = async () => { 
-    let authToken = btoa("user17:6DJn4e5qbqb2a4D8")
+const getProducts = async () => { 
+    let authToken = btoa("user8:eAqd2ZPk3Rbtm8Mw")
     let response = await fetch(url, {
     method: "GET",
     headers: {
